@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='usfm',
-    version='0.1.0',
+    version='0.1.1b1',
     description='USFM Parser and Converters',
     packages=find_packages(),
     zip_safe=False,
