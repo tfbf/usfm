@@ -1,11 +1,20 @@
+import os
 from setuptools import setup, find_packages
+
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
 
 setup(name='usfm',
     version='0.1.1b1',
+    author='Baiju Muthukadan',
+    author_email='baiju.m.mail@gmail.com',
     description='USFM Parser and Converters',
+    long_description=read('README.rst'),
+    license='BSD',
+    url='https://github.com/tfbf/usfm',
     packages=find_packages(),
     zip_safe=False,
-    author='Baiju Muthukadan',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
